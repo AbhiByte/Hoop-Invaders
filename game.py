@@ -1,9 +1,12 @@
 import pygame
+import os
+import time
+import random
 
 WIDTH, HEIGHT = 1500, 1000
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Hoop-Invaders --alpha 1.00")
-background = pygame.image.load("background.jpg")
+background = pygame.image.load(os.path.join("Images", "background.jpg"))
 FPS = 60
 def draw_bg():
     WIN.blit(background, (0, 0))
