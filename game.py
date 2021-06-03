@@ -4,9 +4,9 @@ import time
 import random
 pygame.font.init()
 #Screen
-WIDTH, HEIGHT = 1500, 1000
+WIDTH, HEIGHT = 1200, 800
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Hoop-Invaders --alpha 1.00")
+pygame.display.set_caption("cRona-Invaders --alpha 1.00")
 
 #Images
 background_image = pygame.transform.scale(pygame.image.load(os.path.join("Images", "background.jpg")), (WIDTH, HEIGHT))
@@ -39,6 +39,8 @@ class Player(Virus):
         self.ball_img = ball_image
         self.mask = pygame.mask.from_surface(self.hoop_image)
         self.max_health = health
+#class Enemy(Virus):
+    #def __init__ (self, x, y)
 #Main game loop
 def main():
     run = True
