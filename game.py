@@ -1,3 +1,4 @@
+#cRona Invaders game made using Pygame module of Python
 import pygame
 import os
 import time
