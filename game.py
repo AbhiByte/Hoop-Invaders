@@ -13,6 +13,27 @@ pygame.display.set_caption("cRona-Invaders --alpha 1.00")
 background_image = pygame.transform.scale(pygame.image.load(os.path.join("Images", "background.jpg")), (WIDTH, HEIGHT))
 player_image = pygame.image.load(os.path.join("Images", "playerVirus.png"))
 enemy_image = pygame.image.load(os.path.join("Images", "enemyVirus.png"))
+laser_blue_image = pygame.image.load(os.path.join("Images", "pixel_laser_blue.png"))
+laser_green_image = pygame.image.load(os.path.join("Images", "pixel_laser_green.png"))
+laser_red_image = pygame.image.load(os.path.join("Images", "pixel_laser_red.png"))
+laser_yellow_image = pygame.image.load(os.path.join("Images", "pixel_laser_yellow.png"))
+
+
+class Laser:
+    def __init__ (self, x, y, img):
+        self.x = # XXX: self.y = y
+        self.img = img
+        self.mask = pygame.mask.from_surface(sef.img)
+
+    def draw(self, window):
+        window.vlit(self.img, (self.x, self.y))
+    def move(self, vel):
+        self.y += vel
+    def offTheScreen(self, height):
+        return self.y <= height and self.y >= 0
+    def collision(self, obj):
+        return collide(obj, self)
+def collide(obj1, obj2):
 
 class Virus:
     def __init__ (self, x, y, health=100):
@@ -23,6 +44,8 @@ class Virus:
         self.enemy_image = enemy_image
         self.virus_img = enemy_image
         self.coolDownCounter = 0
+        self.laser_img = None
+        self.laser = []
 
     def draw(self, window):
         window.blit(self.player_image, (self.x, self.y))
@@ -53,6 +76,7 @@ def main():
     FPS = 60
     clock = pygame.time.Clock()
     mainFont = pygame.font.SysFont("comicsans", 50)
+    lost_font = pygame.font.SysFont("comicsans", 60)
     player_vel = 5
     level = 0
     lives = 5
@@ -60,6 +84,9 @@ def main():
     enemy_vel = 1
     enemies = []
     wave_length = 5
+
+    lost = False
+    lost_count = 0
 
     player = Virus(300, 650)
     def redraw_window():
@@ -76,10 +103,25 @@ def main():
 
         player.draw(WIN)
 
+        if lost:
+            lost_label = lost_font.render("Loser!",1 , (255,255,255))
+            WIN.blit(lost_label, (WIDTH/2 - lost_label.get_width()/2, 350))
+
         pygame.display.update()
 
     while run:
         clock.tick(FPS)
+        redraw_window()
+
+        if lives <= 0 or player.health <= 0:
+            lost = True
+            lost_count += 1
+
+        if lost:
+            if lost_count > FPS * 3:
+                run = False
+            else:
+                continue
 
         if len(enemies) == 0:
             level += 1
@@ -106,7 +148,7 @@ def main():
             if enemy.y + enemy.get_height() > HEIGHT:
                 lives -= 1
                 enemies.remove(enemy)
-        redraw_window()
+        #redraw_window()
     pygame.quit()
 
 
