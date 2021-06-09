@@ -1,5 +1,6 @@
 #cRona Invaders game made using Pygame module of Python
 #Latest additons: added laser class and started working on collision function
+#To do on own: add title screen w/ button functionallity and add music, sound effects
 #Big thanks to Tech With Tim for the tutorials!
 import pygame
 import os
