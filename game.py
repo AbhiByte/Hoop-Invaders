@@ -1,4 +1,6 @@
 #cRona Invaders game made using Pygame module of Python
+#Latest additons: added laser class and started working on collision function
+#Big thanks to Tech With Tim for the tutorials!
 import pygame
 import os
 import time
