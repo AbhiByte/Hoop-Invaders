@@ -21,7 +21,8 @@ laser_yellow_image = pygame.image.load(os.path.join("Images", "pixel_laser_yello
 
 class Laser:
     def __init__ (self, x, y, img):
-        self.x = # XXX: self.y = y
+        self.x = x
+        self.y = y
         self.img = img
         self.mask = pygame.mask.from_surface(sef.img)
 
@@ -33,7 +34,7 @@ class Laser:
         return self.y <= height and self.y >= 0
     def collision(self, obj):
         return collide(obj, self)
-def collide(obj1, obj2):
+#def collide(obj1, obj2):
 
 class Virus:
     def __init__ (self, x, y, health=100):
@@ -152,7 +153,34 @@ def main():
     pygame.quit()
 
 
+def home_screen():
+    runn = True
+    FPS = 60
+    clock = pygame.time.Clock()
+    mainFont = pygame.font.SysFont("comicsans", 50)
+
+    WIN.blit(background_image, (0, 0))
+    #Home screens texts
+    start_text = "Start Game"
+    instructions_text = "How To Play"
+    credits_text = "Credits"
+    #Creating home screen labels
+    startLabel = mainFont.render(start_text, 1, (255,0,0))
+    instructionsLabel = mainFont.render(instructions_text, 1, (0, 255, 0))
+    creditsLabel = mainFont.render(credits_text, 1, (0, 255, 0))
+
+    WIN.blit(startLabel, (WIDTH/2, 10))
+    #WIN.blit(levelLabel, (WIDTH - levelLabel.get_width() - 10, 10))
+    while runn:
+        clock.tick(FPS)
+        pygame.display.update()
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                runn = False
+    if runn == False:
+        pygame.quit()
 
 
 if __name__ == '__main__':
-    main()
+    #main()
+    home_screen()
