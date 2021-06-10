@@ -155,7 +155,7 @@ def main():
         #redraw_window()
     pygame.quit()
 
-
+#Home screen func
 def home_screen():
     runn = True
     FPS = 60
