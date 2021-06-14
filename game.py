@@ -155,7 +155,7 @@ def main():
         #redraw_window()
     pygame.quit()
 
-#Home screen func
+#Home screen function To do: Add buttons and transition to main()
 def home_screen():
     runn = True
     FPS = 60
