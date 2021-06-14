@@ -171,9 +171,11 @@ def home_screen():
     startLabel = mainFont.render(start_text, 1, (255,0,0))
     instructionsLabel = mainFont.render(instructions_text, 1, (0, 255, 0))
     creditsLabel = mainFont.render(credits_text, 1, (0, 255, 0))
+    
 
-    WIN.blit(startLabel, (WIDTH/2, 10))
-    #WIN.blit(levelLabel, (WIDTH - levelLabel.get_width() - 10, 10))
+    WIN.blit(startLabel, (WIDTH/2 - 100, HEIGHT/2))
+    WIN.blit(instructionsLabel, (WIDTH/2 - 105, HEIGHT/2 + 100))
+    WIN.blit(creditsLabel, (WIDTH/2 - 70, HEIGHT/2 + 200))
     while runn:
         clock.tick(FPS)
         pygame.display.update()
