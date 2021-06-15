@@ -108,7 +108,7 @@ def main():
         player.draw(WIN)
 
         if lost:
-            lost_label = lost_font.render("Loser!",1 , (255,255,255))
+            lost_label = lost_font.render("Loser!", 1, (255,255,255))
             WIN.blit(lost_label, (WIDTH/2 - lost_label.get_width()/2, 350))
 
         pygame.display.update()
@@ -187,5 +187,5 @@ def home_screen():
 
 
 if __name__ == '__main__':
-    #main()
-    home_screen()
+    main()
+    #home_screen()
