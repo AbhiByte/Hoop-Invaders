@@ -27,7 +27,7 @@ class Laser:
         self.x = x
         self.y = y
         self.img = img
-        self.mask = pygame.mask.from_surface(sef.img)
+        self.mask = pygame.mask.from_surface(self.img)
 
     def draw(self, window):
         window.vlit(self.img, (self.x, self.y))
@@ -37,7 +37,10 @@ class Laser:
         return self.y <= height and self.y >= 0
     def collision(self, obj):
         return collide(obj, self)
-#def collide(obj1, obj2):
+def collide(obj1, obj2):
+    offset_x = obj2.x - obj1.x
+    offset_y = obj2.y - obj1.y
+    return obj1.mask.overlap(obj2, (offset_x, offset_y))
 
 class Virus:
     def __init__ (self, x, y, health=100):
@@ -49,7 +52,7 @@ class Virus:
         self.virus_img = enemy_image
         self.coolDownCounter = 0
         self.laser_img = None
-        self.laser = []
+        self.lasers = []
 
     def draw(self, window):
         window.blit(self.player_image, (self.x, self.y))
