@@ -1,20 +1,11 @@
-  <h3 align="center">cRona-Invaders Covid Shooter Game</h3>
 <br />
   <p align="center">
   <a href="https://github.com/AbhiByte/cRona-Invaders">
     <img src="downloads/lol.jpg" alt="Logo" width="80" height="80">
   </a>
+  <h3 align="center">cRona Invaders</h3>
   <p align="center">
-    June 2021 - Abhinav Ramesh
-
-    <a href=""><strong></strong></a>
-    <br />
-    <br />
-    <a href=""></a>
-    ·
-    <a href=""></a>
-    ·
-    <a href=""></a>
+    This program is a twist on the popular 'Space Invaders' game
   </p>
 </p>
 
