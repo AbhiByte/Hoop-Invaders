@@ -1,5 +1,9 @@
   <h3 align="center">cRona-Invaders Covid Shooter Game</h3>
-
+<br />
+  <p align="center">
+  <a href="https://github.com/AbhiByte/cRona-Invaders">
+    <img src="downloads/lol.jpg" alt="Logo" width="80" height="80">
+  </a>
   <p align="center">
     June 2021 - Abhinav Ramesh
     <br />
