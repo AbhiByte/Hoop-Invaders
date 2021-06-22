@@ -23,7 +23,6 @@
   * [Developed Using](#developed-using)
 * [The Software](#the-software)
   * [Classes and Functions](#class-objects)
-  * [Main Method](#main-method)
 * [Usage and Execution](#usage-and-execution)
 * [Final Thoughts](#final-thoughts)
 * [References](#references)
@@ -70,16 +69,9 @@ class Player(Virus):
 ```
 NOTE: One example of a class used to create a player object and inheriting from the Virus class
 
-### Main Method
-The main method is the heart of the program. This is where user input is taken, variables are assinged to those inputs and the class methods are called and ran
-
-![Main Method](https://user-images.githubusercontent.com/64025335/84406797-0433a300-abd8-11ea-8fc0-d9c3562da8bc.gif)
-
-The main method begins by defining the scanner input for user input. It then asks for specific user input for each of the class method parameters and assigns them to variables. Finally it calls on the class methods to be executed
-
 ## Usage and Execution
 
-The program executes in the console as follows: 
+The program executes as follows: 
 
 ![Console SS](https://user-images.githubusercontent.com/64025335/84409701-bf117000-abdb-11ea-9f0b-a821a589c0e0.png)
 
