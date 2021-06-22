@@ -76,7 +76,8 @@ The home page executes as follows:
 ![Console SS](https://i.postimg.cc/ryBxF8DC/hiii.png)]
 
 After the mouse is clicked, the main game runs:
-[![ola.png](https://i.postimg.cc/Prnvn27S/ola.png)]
+
+![ola.png](https://i.postimg.cc/Prnvn27S/ola.png)]
 
 Observe how if the inputed parameter exceeds the limtitations set in the method (see full code for details), the user is told that the rocket is NOT go for launch. If however the inputed data is within the acceptable range, then they are told that the rocket is go for launch
 
