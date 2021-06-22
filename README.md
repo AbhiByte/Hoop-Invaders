@@ -91,7 +91,7 @@ Please refer to the References section for additional reading and sources
 
 Abhinav Ramesh - [](abhinavramesh03@gmail.com) abhinavramesh03@gmail.com
 
-Project Link: [https://github.com/AbhiByte/c-Rona-Invaders(https://github.com/AbhiByte/cRona-Invaders)
+Project Link: [https://github.com/AbhiByte/c-Rona-Invaders] (https://github.com/AbhiByte/cRona-Invaders)
 
 
 ## References
