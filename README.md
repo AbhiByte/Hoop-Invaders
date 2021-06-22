@@ -6,7 +6,7 @@
   </a>
   <p align="center">
     June 2021 - Abhinav Ramesh
-    <br />
+
     <a href=""><strong></strong></a>
     <br />
     <br />
