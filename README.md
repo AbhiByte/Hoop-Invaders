@@ -1,7 +1,7 @@
 <br />
   <p align="center">
   <a href="https://github.com/AbhiByte/cRona-Invaders">
-    <img src="[![lol.png](https://i.postimg.cc/RFqbXmfh/lol.png)](https://postimg.cc/gXFD2fgb)" alt="Logo" width="80" height="80">
+    <![lol.png](https://i.postimg.cc/RFqbXmfh/lol.png)](https://postimg.cc/gXFD2fgb)>
   </a>
   <h3 align="center">cRona Invaders</h3>
   <p align="center">
