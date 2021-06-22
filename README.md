@@ -79,34 +79,23 @@ After the mouse is clicked, the main game runs:
 
 ![ola.png](https://i.postimg.cc/Prnvn27S/ola.png)]
 
-Observe how if the inputed parameter exceeds the limtitations set in the method (see full code for details), the user is told that the rocket is NOT go for launch. If however the inputed data is within the acceptable range, then they are told that the rocket is go for launch
-
-For the real experience, copy the code into an IDE of your choice and run the code for yourself. You'll observe how the sleep() method adds a nice flow to the program (instead of it all being printed to the console at once)
-
-
+The lives decrement when the viruses hit the bottom of the screen and if lives == 0, a lost message is displayed and the game is ended
 
 
 ## Final Thoughts
-ICS3U0 was very fun and engaging. The course taught me the basics of java and helped improve my programming and problem solving skills. This code showcases some of the various skills and techniques learned throughout the course
+This project was quite fun and I learned a lot about OOP and how to use classes and objects in my projects. It helped solidify my Python skills and gives me a strong foundation for future projects!
 
 Please refer to the References section for additional reading and sources
-
-Kindly also view the infographic made in conjunction with this project (linked below)
-
 
 ## Contact and Infographic
 
 Abhinav Ramesh - [](abhinavramesh03@gmail.com) abhinavramesh03@gmail.com
 
-Project Link: [https://github.com/AbhiByte/ICS3U0-ISU-Artifact](https://github.com/AbhiByte/ICS3U0-ISU-Artifact)
-
-Infographic: [https://create.piktochart.com/output/47262699-my-visual](https://create.piktochart.com/output/47262699-my-visual)
-
-
+Project Link: [https://github.com/AbhiByte/c-Rona-Invaders(https://github.com/AbhiByte/cRona-Invaders)
 
 
 ## References
-* [NASA Launch Weather Criteria for Falcon 9](https://www.nasa.gov/pdf/649911main_051612_falcon9_weather_criteria.pdf)
-* [Additional Reading on Launch Commit Criteria](https://en.wikipedia.org/wiki/Launch_commit_criteria)
+* [Based off of tutorial from Tech With Tim](https://www.youtube.com/watch?v=Q-__8Xw9KTM&ab_channel=TechWithTim)
+* [Pygame Documentation](https://www.pygame.org/docs/)
 * [README Format Adapted from othneildrew](https://github.com/othneildrew/Best-README-Template.git)
 
