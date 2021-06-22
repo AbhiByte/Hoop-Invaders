@@ -73,7 +73,7 @@ NOTE: One example of a class used to create a player object and inheriting from 
 
 The program executes as follows: 
 
-![Console SS](https://user-images.githubusercontent.com/64025335/84409701-bf117000-abdb-11ea-9f0b-a821a589c0e0.png)
+![Console SS](https://i.postimg.cc/ryBxF8DC/hiii.png)](https://postimg.cc/8sbjZgBj)
 
 Observe how if the inputed parameter exceeds the limtitations set in the method (see full code for details), the user is told that the rocket is NOT go for launch. If however the inputed data is within the acceptable range, then they are told that the rocket is go for launch
 
