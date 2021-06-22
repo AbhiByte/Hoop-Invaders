@@ -8,7 +8,7 @@ import time
 import random
 pygame.font.init()
 #Screen
-WIDTH, HEIGHT = 1200, 800
+WIDTH, HEIGHT = 1900, 1000
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("cRona-Invaders --alpha 1.00")
 
@@ -35,7 +35,6 @@ class Laser:
         self.y += vel
     def offTheScreen(self, height):
         return not (self.y <= height and self.y >= 0)
-        #return obj1.mask.overlap(obj2, (offset_x, offset_y)) != None
     def collision(self, obj):
         return collide(self, obj)
 
@@ -232,7 +231,6 @@ def home_screen():
                 runn = False
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                if mouse[1] <= WIDTH/2:
                     main()
     if runn == False:
         pygame.quit()
