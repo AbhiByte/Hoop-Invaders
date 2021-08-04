@@ -21,7 +21,7 @@ laser_green_image = pygame.image.load(os.path.join("Images", "pixel_laser_green.
 laser_red_image = pygame.image.load(os.path.join("Images", "pixel_laser_red.png"))
 laser_yellow_image = pygame.image.load(os.path.join("Images", "pixel_laser_yellow.png"))
 
-
+#Laser Class
 class Laser:
     def __init__ (self, x, y, img):
         self.x = x
@@ -37,7 +37,7 @@ class Laser:
         return not (self.y <= height and self.y >= 0)
     def collision(self, obj):
         return collide(self, obj)
-
+#Virus class
 class Virus:
     COOLDOWN = 30
 
@@ -83,7 +83,7 @@ class Virus:
 
     def get_height(self):
         return self.player_image.get_height()
-
+#Player class
 class Player(Virus):
     def __init__ (self, x, y, health=100):
         super().__init__(x, y, health)
